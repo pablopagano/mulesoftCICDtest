@@ -37,7 +37,7 @@
                           <password>PheasantSteel4943</password>
                           <applicationName>mulesoftcicdtest</applicationName>
                           <environment>Sandbox</environment>
-                          <region>eu-central-1</region>
+                          <region>us-east-1</region>
                           <workers>1</workers>
                           <workerType>Micro</workerType>
                         </cloudHubDeployment>
