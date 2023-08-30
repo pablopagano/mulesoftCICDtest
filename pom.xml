@@ -29,19 +29,25 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-					  <configuration>
-                        <cloudHubDeployment>
-                          <uri>https://anypoint.mulesoft.com</uri>
-                          <muleVersion>4.4.0</muleVersion>
-                          <username>ppaganosalesforcemia</username>
-                          <password>PheasantSteel4943</password>
-                          <applicationName>mulesoftcicdtest</applicationName>
-                          <environment>Sandbox</environment>
-                          <region>us-east-1</region>
-                          <workers>1</workers>
-                          <workerType>Micro</workerType>
-                        </cloudHubDeployment>
-					  </configuration>
+            <configuration>
+            <cloudHubDeployment>
+                <uri>https://anypoint.mulesoft.com</uri>;
+                <muleVersion>4.4.0</muleVersion>
+                <businessGroup>Salesforce</businessGroup>
+                <applicationName>mulesoftcicdtest</applicationName>
+                <environment>Sandbox</environment>
+                <region>us-east-1</region>
+                <workers>1</workers>
+                <workerType>MICRO</workerType>
+                <properties>
+                    <key>value</key>
+                </properties>
+                <connectedAppClientId>264851886d4c4bba93a9ab91aed50d56</connectedAppClientId>
+                <connectedAppClientSecret>850aCC6533d54A71bAf08c128fcd28e1</connectedAppClientSecret>
+                <connectedAppGrantType>client_credentials</connectedAppGrantType>
+                <objectStoreV2>true</objectStoreV2>
+            </cloudHubDeployment>
+        </configuration>
 			</plugin>
 		</plugins>
 	</build>
